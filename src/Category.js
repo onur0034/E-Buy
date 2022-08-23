@@ -2,15 +2,15 @@ import React, { Component } from "react";
 import { ListGroup, ListGroupItem } from "reactstrap";
 
 export default class Category extends Component {
-  constructor(props) {                               /*constructor is not necessary with new version */
-    super(props);
-    this.state = {                                   /*can be showed just state ={}*/ 
+         
+    
+   state = {                                   
       categories: [
         { categoryId: 1, categoryName: "Alcohols" },
         { categoryId: 2, categoryName: "foods" },
       ],
     };
-  }
+  
   render() {
     return (
       <div>
