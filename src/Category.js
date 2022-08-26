@@ -8,6 +8,7 @@ export default class Category extends Component {
       { categoryId: 2, categoryName: "foods" },
     ],
     currentCategory: "as",
+    
   };
   changeCategory = (category) => {
     this.setState({ currentCategory: category.categoryName });
