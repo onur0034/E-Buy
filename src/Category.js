@@ -15,7 +15,7 @@ export default class Category extends Component {
         <h3>{this.props.info.title}</h3>
 
         <ListGroup>
-          {this.state.categories.map((category) => (
+          {this.state.categories.mcdap((category) => (
             <ListGroupItem
               key={category.categoryId}
               onClick={() => this.props.changeCategory(category)}
@@ -23,11 +23,9 @@ export default class Category extends Component {
               {category.categoryName}
             </ListGroupItem>
           ))}
-          
         </ListGroup>
-        <h4>{this.props.currentCategory}</h4>  
-        
-     </div>
+        <h4>{this.props.currentCategory}</h4>
+      </div>
     );
   }
 }

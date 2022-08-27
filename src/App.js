@@ -5,8 +5,7 @@ import Product from "./Product";
 import { Container, Row, Col } from "reactstrap";
 
 export default class App extends Component {
-
-  state = {currentCategory: ""}
+  state = { currentCategory: "" };
 
   changeCategory = (category) => {
     this.setState({ currentCategory: category.categoryName });
@@ -24,7 +23,8 @@ export default class App extends Component {
           </Row>
           <Row>
             <Col xs="3">
-              <Category currentCategory= {this.state.currentCategory}
+              <Category
+                currentCategory={this.state.currentCategoryjson}
                 changeCategory={this.changeCategory}
                 info={categoryInfo}
               />
