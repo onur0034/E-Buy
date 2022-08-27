@@ -23,9 +23,13 @@ export default class Category extends Component {
               {category.categoryName}
             </ListGroupItem>
           ))}
+          
         </ListGroup>
-        <h4>{this.props.currentCategory}</h4>
-      </div>
+        <h4>{this.props.currentCategory}</h4>  
+        
+     </div>
     );
   }
 }
+
+//we are taking from app FROM NOW so "state" turn into "props"**********
