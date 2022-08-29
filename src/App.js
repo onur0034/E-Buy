@@ -24,7 +24,7 @@ export default class App extends Component {
           <Row>
             <Col xs="3">
               <Category
-                currentCategory={this.state.currentCategoryjson}
+                currentCategory={this.state.currentCategory}
                 changeCategory={this.changeCategory}
                 info={categoryInfo}
               />

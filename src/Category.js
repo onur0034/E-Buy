@@ -15,7 +15,7 @@ export default class Category extends Component {
         <h3>{this.props.info.title}</h3>
 
         <ListGroup>
-          {this.state.categories.mcdap((category) => (
+          {this.state.categories.map((category) => (
             <ListGroupItem
               key={category.categoryId}
               onClick={() => this.props.changeCategory(category)}
