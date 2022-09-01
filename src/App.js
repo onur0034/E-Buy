@@ -36,6 +36,7 @@ export default class App extends Component {
           <Row>
             <Navi />
           </Row>
+
           <Row>
             <Col xs="3">
               <Category
