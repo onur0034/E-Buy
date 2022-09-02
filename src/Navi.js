@@ -1,8 +1,6 @@
 import React from "react";
 import {
-
   Navbar,
-  
   NavbarBrand,
   Nav,
   NavItem,
@@ -11,18 +9,16 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
- 
 } from "reactstrap";
 
-function Navi(args) {
- 
-
-  return (
-    <div>
-      <Navbar {...args}>
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
-          <Nav className="me-auto" >
-            <NavItem >
+export default class Navi extends React.Component {
+  render() {
+    return (
+      <div>
+        <Navbar>
+          <NavbarBrand href="/">Nortwind App</NavbarBrand>
+          <Nav>
+            <NavItem>
               <NavLink href="/components/">Components</NavLink>
             </NavItem>
             <NavItem>
@@ -32,7 +28,7 @@ function Navi(args) {
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options
+                Options - {this.props.cart.length}
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>Option 1</DropdownItem>
@@ -42,11 +38,8 @@ function Navi(args) {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          
-       
-      </Navbar>
-    </div>
-  );
+        </Navbar>
+      </div>
+    );
+  }
 }
-
-export default Navi;
