@@ -19,7 +19,13 @@ export default class CartSummary extends Component {
         <DropdownMenu right>
           {this.props.cart.map((c) => (
             <DropdownItem key={c.product.id}>
-              
+              <Badge
+                color="danger"
+                onClick={() => this.props.removeFromCart(c.product)}
+              >
+                x
+              </Badge>
+
               {c.product.productName}
               <Badge color="success" pill>
                 {" "}

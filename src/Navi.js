@@ -19,7 +19,7 @@ export default class Navi extends React.Component {
             </NavItem>
             <CartSummary
               cart={this.props.cart}
-              
+              removeFromCart={this.props.removeFromCart}
             />
           </Nav>
         </Navbar>
