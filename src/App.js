@@ -41,6 +41,8 @@ export default class App extends Component {
     });
   };
 
+
+
   render() {
     let categoryInfo = { title: "Category List", bisey: "sa" };
     let productInfo = { title: "Product List" };
@@ -48,7 +50,7 @@ export default class App extends Component {
       <div>
         <Container>
           <Row>
-            <Navi cart={this.state.cart} />
+            <Navi removeFromCart={this.removeFromCart} cart={this.state.cart} />
           </Row>
 
           <Row>
